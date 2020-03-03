@@ -1,0 +1,30 @@
+.table {
+	margin: 20px;
+
+	&__row {
+		border-bottom: 1px solid grey;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		line-height: 50px;
+
+		& > div {
+			width: 300px;
+			text-align: center;
+
+			&:first-child {
+				width: 400px;
+			}
+		}
+
+		&--header {
+			color: #ffffffc2;
+			font-size: 25px;
+			background-image: linear-gradient(to right, #ff7e22, #ff2300);
+
+			&:hover {
+				background-image: linear-gradient(to right, #ff7e22, #ff2300);
+			}
+		}
+	}
+}

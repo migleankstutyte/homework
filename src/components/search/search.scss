@@ -1,0 +1,105 @@
+.search {
+	display: flex;
+	width: 100%;
+	margin: 0 20px;
+	height: 50px;
+
+	position: relative;
+	padding: 0 0 0 20px;
+	margin: 0 20px;
+
+	img {
+		left: 20px;
+		position: absolute;
+		bottom: 10px;
+		height: 30px;
+		filter: invert(100%);
+		padding-left: 10px;
+	}
+	input {
+		width: 95%;
+		background-image: linear-gradient(to right, #ff7e22bf, #ff2300bf);
+		border: none;
+		padding-left: 50px;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+
+		&::placeholder {
+			color: white;
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+		&:focus {
+			background: white;
+			color: black;
+			margin-left: 50px;
+			outline: none;
+			background-image: url('../../icons/movie.svg');
+			background-repeat: no-repeat;
+			background-size: 20px;
+			background-position: 10px 15px;
+		}
+	}
+
+	&__button {
+		background: white;
+		width: 50px;
+		position: relative;
+		cursor: pointer;
+		border: none;
+		margin-left: 5px;
+
+		img {
+			filter: invert(48%) sepia(94%) saturate(4517%);
+			padding: 0;
+			position: absolute;
+			left: 3px;
+			height: 40px;
+			top: 5px;
+		}
+	}
+}
+
+.results {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.9em;
+	position: absolute;
+	top: 85px;
+	left: 90px;
+	background: white;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+	width: 89%;
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		line-height: 20px;
+		padding: 10px 20px 10px 50px;
+
+		&:hover {
+			background: #ff7e223d;
+			cursor: pointer;
+		}
+
+		&-title {
+			font-weight: bold;
+		}
+
+		&-info {
+			display: flex;
+
+			p:first-child {
+				margin-right: 5px;
+			}
+		}
+
+		p {
+			margin: 0;
+			font-size: 13px;
+		}
+	}
+}
